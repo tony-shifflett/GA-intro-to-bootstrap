@@ -9,7 +9,7 @@
 
 * [Bootstrap](http://getbootstrap.com/) is a **front-end framework** created by a small team of developers at Twitter and maintained by a much larger community of contributors.
 * The framework consists of one main CSS file, an optional theme CSS file, and a main JS file.
-* Bootstrap requires [jQuery](https://code.jquery.com/) to work, which is a JavaScript library.
+* Bootstrap's JS library requires [jQuery](https://code.jquery.com/) to work, which is a JavaScript library.
 
 Bootstrap is extremely popular and knowledge of at least one CSS framework is a very valuable skill to have (and totally worth putting on your resume). 
 
@@ -61,7 +61,7 @@ A site designed with RWD adapts the layout to the viewing environment by using f
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design)
 
 
-## Responsive Grid System (aka Columns of Craziness)
+## Responsive Grid System
 * Columns are written in the following format as a class attribute: `col-(breakpoint)-(offset)`
 * For example: `col-sm-4`
 * Columns are often wrapped into an element with a class of `row` or `container`.
