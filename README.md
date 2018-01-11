@@ -70,7 +70,7 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design)
 To ensure all your Bootstrap styles behave properly, always put your content inside an element with a class "container" (usually `<div class="container">`). This will center your content and leave a small margin on the sides of the page. If you would like to use the full width of the screen (no margin) use `class="container-fluid"`
 
 #### Page layout using the Grid System
-![grid](imgs/grid.png)
+![grid](http://res.cloudinary.com/jkeohan/image/upload/v1515675398/Bootstrap-grid_jwulzb.png)
 
 Bootstrap's grid system is based on the idea that a page layout for any given screen size is represented with 12 fluid **columns**.  Columns are always horizontally contained in **rows**, which in turn are contained inside of the previously mentioned `container` (container > row > column):
 
