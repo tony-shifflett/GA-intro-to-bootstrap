@@ -210,4 +210,78 @@ Always make sure you understand what the code is doing before copying and pastin
 - It gives us pre-styled stuff we can use to make our webpages look beautiful, as well as JavaScript for some common interactive elements like drop-downs and carousels. 
 - Bootstrap also gives us a responsive **grid system**
 
-## NOW LET US BEHOLD THE GLORY OF BOOTSTRAP -- demo
+## Putting it all together
+
+Let's build something with Bootstrap!! I'll be working in [this codepen](https://codepen.io/jlr7245/pen/zwaYyX?editors=1000) to create [this layout](http://getbootstrap.com/examples/jumbotron/).
+
+<details>
+<summary>Solution</summary>
+
+```html
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Hello World
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello, world!</h1>
+    <p>Here is our awesome internet website</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Header</h3>
+      <p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content
+        Content </p>
+      <p><a class="btn btn-success btn-sm">Learn More</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Header</h3>
+      <p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content
+        Content </p>
+      <p><a class="btn btn-success btn-sm">Learn More</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Header</h3>
+      <p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content
+        Content </p>
+      <p><a class="btn btn-success btn-sm">Learn More</a></p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <hr/>
+  <footer>
+    <p>Made with love by WDI Ada.</p>
+  </footer>
+</div>
+```
+
+</details>
+
+## 🚀 Lab time!!!
+
+Try replicating [this Bootstrap template](http://getbootstrap.com/examples/offcanvas/) in the `index.html` of this directory. Remember to include the three script/style links, and refer frequently back to the documentation!!
+
+You can work in pairs or groups for this lab.
+
