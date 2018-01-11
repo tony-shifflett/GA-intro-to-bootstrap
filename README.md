@@ -212,7 +212,7 @@ Always make sure you understand what the code is doing before copying and pastin
 
 ## Putting it all together
 
-Let's build something with Bootstrap!! I'll be working in [this codepen](https://codepen.io/jlr7245/pen/zwaYyX?editors=1000) to create [this layout](http://getbootstrap.com/examples/jumbotron/).
+Let's build something with Bootstrap!! I'll be working in [this codepen](https://codepen.io/jkeohan/pen/VyxzKj?editors=1000) to create [this layout](http://getbootstrap.com/examples/jumbotron/).
 
 <details>
 <summary>Solution</summary>
