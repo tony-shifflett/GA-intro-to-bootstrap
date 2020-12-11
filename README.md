@@ -87,7 +87,13 @@ As we saw earlier there are over 4 million+ web sites built using Bootstrap.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Let's take a moment to examine a few of them: [sites-built-with-twitter-bootstrap/](https://www.creative-tim.com/blog/web-design/sites-built-with-twitter-bootstrap/)
+Let's take a moment and take a look at few of them: [sites-built-with-twitter-bootstrap/](https://www.creative-tim.com/blog/web-design/sites-built-with-twitter-bootstrap/)
+
+
+Now lets specifically take a look at this one: 
+
+- https://www.crit-research.it/it/
+
 
 <hr>
 
