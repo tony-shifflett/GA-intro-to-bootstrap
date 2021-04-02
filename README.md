@@ -1,9 +1,9 @@
 # Bootstrap
 ### Learning Objectives
 
-* Require Bootstrap into your project
-* Understand and implement a grid system
-* Design HTML pages with the aid of Bootstrap & mockups
+* Import the Bootstrap library into a project
+* Understand and implement the bootstrap grid system
+* Design an HTML mockup with the aid of Bootstrap  
 
 ## Intro to Front End Frameworks
 
@@ -24,7 +24,9 @@ Its important to understand what each one does and their purpose in web developm
 
 Let's take a look at some of the most popular CSS Frameworks.
 
-[10 JavaScript Libraries and Frameworks to Learn in 2020](https://learntocodewith.me/posts/javascript-libraries-frameworks/)
+<!-- [10 JavaScript Libraries and Frameworks to Learn in 2020](https://learntocodewith.me/posts/javascript-libraries-frameworks/) -->
+
+[Best CSS Frameworks](https://hackr.io/blog/best-css-frameworkshttps://hackr.io/blog/best-css-frameworks)
 
 
 Now lets see how they compare to each other in the number of web sites implementing that technology. 
@@ -33,19 +35,23 @@ Now lets see how they compare to each other in the number of web sites implement
 
 
 #### SEIR
-In this program you will be learning, and or introduced to the following libraries/frameworks:
+In this program you will be learning or introduced to the following libraries/frameworks:
 
 #### Libraries
 
-- jQuery.js (unit 1)
-- D3.js
-- Chart.js
+- jQuery.js
+- Chart.js 
 
 #### Frameworks
 
-- Bootstrap (CSS)
-- React.js
-- Express.js (web framework for node)
+
+**Front End**
+- Bootstrap
+- React.js 
+
+**Back End**
+- Express.js 
+- Rails
 
 
 <hr>
@@ -82,7 +88,7 @@ Bootstrap comes with a ton of features, including:
 
 ## Sites Using Bootstrap
 
-As we saw earlier there are over 4 million+ web sites built using Bootstrap. 
+As we saw earlier there are close to 4 million web sites built using Bootstrap. 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
@@ -100,35 +106,40 @@ Now lets specifically take a look at this one:
 
 ## Including Bootstrap with HTML
 
-To use Bootstrap, we need to include Bootstrap's CSS library, optional Javascript libraries (+ or - an optional Bootstrap-Theme CSS file).
-
-We also need to include jQuery, as Bootstrap's JS plug-ins depend on it.  
+To use Bootstrap, we need to include Bootstrap's CSS and Javascript libraries. We also need to include jQuery, as much of Bootstraps interactivity is implemented via jQuery. 
 
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Let's head over to [Bootstrap](https://getbootstrap.com/) and look over their docs and see how we can setup our project with Bootstrap
 
+Bootstrap is ever evolving and, as of 2020, is now at **v5.0.0-beta3**. 
+
+<img src="https://i.imgur.com/OIlqEqD.png" width=500/>
+
+<br>
+<br>
+
+Let's head over to [Bootstrap](https://getbootstrap.com/) and look over their docs to see how we can setup our project with Bootstrap. 
 <hr>
 
 
 
-## What is Responsive Design?
+<!-- ## What is Responsive Design?
 
 **Responsive web design (RWD)** is an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience— easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to laptops to cellphones).
 
 A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, etc..."
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design)
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design) -->
 
 
 ## Responsive Grid System
 
 Bootstrap takes a similar approach to CSS Grid (or better yet CSS Grid took a similar approach to Bootstrap).  A Bootstrap Grid is comprised of rows and columns. 
 
-Columns are written in the following format as a class attribute: 
+Columns are written in the following format as a **class attribute**: 
 
 **col-(breakpoint)-(offset)** such as: `col-sm-4`
 
@@ -142,20 +153,14 @@ Bootstrap's grid system is based on the idea that a page layout for any given sc
 ![grid](https://res.cloudinary.com/jkeohan/image/upload/v1515675398/Bootstrap-grid_jwulzb.png)
 
 
-#### Start with a container
-
-
-
-#### Page layout using the Grid System
-
-
-
 
 ## Working with the Bootstrap Grid
 
-### Containers
+### Containers, Rows and Columns
 
-To ensure all your Bootstrap styles behave properly, always put your content inside an element with a class **container** (usually `<div class="container">`). This will center your content and leave a small margin on the sides of the page. 
+**Containers**
+
+The class **container**  will center your content and leave a small margin on the left and right sides of the page. 
 
 Use `.container` for a responsive, fixed-width container.
 
@@ -165,32 +170,49 @@ Use `.container` for a responsive, fixed-width container.
 </div>
 ```
 
-If you would like to use the full width of the screen (no margin) use `class="container-fluid"`
+We can also opt for full width of the screen (no margin) using `class="container-fluid"`
 
 ```html
 <div class="container-fluid">
   ...
 </div>
 ```
-Columns are always horizontally contained in **rows**, which in turn are contained inside of the previously mentioned `container` 
+
+**Rows**
+
+Next we add a **row**, which is placed withing a container. 
 
 Let's create our Grid. 
 Create a row: 
 
   ``` html
+  <div class="container">
    <div class="row"> ... </div>
+  </div>
+  ```
+
+  **Columns**
+
+  And finally we add a column. 
+
+ ``` html
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6"></div>
+   </div>
+  </div>
   ```
 
   ## Breakpoints
 
-The way that Bootstrap works is to dynamically reduce column size according to the window size.
+The way that Bootstrap works is that it uses column sizes to dynamically respond to changes in window width.
+
 To be mobile (and tablet!) -friendly, the columns will break into a stack layout after a minimum width is detected.
 
 The breakpoints you can select in your columns control at which point this happens.
 
-Check out their [documentation](http://getbootstrap.com/css/#grid) here to see what these breakpoints are in terms of size.
+Check out their [documentation](https://getbootstrap.com/docs/3.4/css/#grid-options) here to see what these breakpoints are in terms of size.
   
-Inside your row, create a column for the targeted screen size: 
   - col-xs < 768px (e.g. smartphones)
   - col-sm ≥ 992px (e.g. tablets)
   - col-md ≥ 1200px (e.g. laptops, desktops)
