@@ -137,7 +137,7 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design) -->
 
 ## Responsive Grid System
 
-Bootstrap takes a similar approach to CSS Grid (or better yet CSS Grid took a similar approach to Bootstrap).  A Bootstrap Grid is comprised of rows and columns. 
+Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with **flexbox** and is fully responsive. 
 
 Columns are written in the following format as a **class attribute**: 
 
@@ -151,7 +151,6 @@ Bootstrap's grid system is based on the idea that a page layout for any given sc
 
 
 ![grid](https://res.cloudinary.com/jkeohan/image/upload/v1515675398/Bootstrap-grid_jwulzb.png)
-
 
 
 ## Working with the Bootstrap Grid
